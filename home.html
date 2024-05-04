@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Con amor para ti.">
+    <meta name="author" content="Devcrud">
+    <title>Para Mi Bebé Linda</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Dorang main styles -->
+    <link rel="stylesheet" href="assets/css/dorang.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+
+</head>
+<header>
+
+</header>
+
+<body>
+
+    <div class="loader" id="loader">
+        <span class="text">↓</span>
+        <span class="text" style="--delay: 0.1s">↓</span>
+        <span class="text" style="--delay: 0.3s">↓</span>
+        <span class="text" style="--delay: 0.4s">↓</span>
+        <span class="text" style="--delay: 0.5s">↓</span>
+    </div>
+
+    <div data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme animate-bottom gone"
+        style="height:100%">
+        <!-- page navbar -->
+        <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+            <ul class="nav-navbar container">
+                <li class="nav-item"><button class="primary nav-link"
+                        onclick="window.dialog_feliz.showModal();">Me</button></li>
+                <li class="nav-item"><button class="primary nav-link"
+                        onclick="window.dialog_14.showModal();">Haces</button>
+                </li>
+                <li class="nav-item"><button class="primary nav-link" onclick="window.dialog_heart.showModal();"><img
+                            src="assets/imgs/heart.svg" alt="<3"></button></li>
+                <li class="nav-item"><button class="primary nav-link"
+                        onclick="window.dialog_de.showModal();">Muy</button>
+                </li>
+                <li class="nav-item"><button class="primary nav-link"
+                        onclick="window.dialog_febrero.showModal();">Feliz</button></li>
+            </ul>
+        </nav><!-- end of page navbar -->
+
+        <!-- Dialogs to open in the navbar section -->
+        <dialog id="dialog_feliz">
+            <img src="assets/imgs/navbar/1.jpeg" alt="" style="width: 100%;">
+            <button onclick="window.dialog_feliz.close();" aria-label="close" class="x">❌</button>
+        </dialog>
+        <dialog id="dialog_14">
+            <div class="centered">
+                <img src="assets/imgs/navbar/2.jpeg" alt="" style="width: 80%;">
+            </div>
+            <button onclick="window.dialog_14.close();" aria-label="close" class="x">❌</button>
+        </dialog>
+        <dialog id="dialog_heart">
+            <img src="assets/imgs/navbar/3.jpeg" alt="" style="width: 100%;">
+            <button onclick="window.dialog_heart.close();" aria-label="close" class="x">❌</button>
+        </dialog>
+        <dialog id="dialog_de">
+            <img src="assets/imgs/navbar/4.jpeg" alt="" style="width: 100%;">
+            <button onclick="window.dialog_de.close();" aria-label="close" class="x">❌</button>
+        </dialog>
+        <dialog id="dialog_febrero">
+            <img src="assets/imgs/navbar/5.jpeg" alt="" style="width: 100%;">
+            <button onclick="window.dialog_febrero.close();" aria-label="close" class="x">❌</button>
+        </dialog>
+
+        <dialog id="question">
+            <img src="assets/imgs/question.png" alt="" style="width: 100%;">
+            <div class="centered">
+                <button onclick="window.question.close();" style="margin-right: 4rem;" class="btn btn-theme-color modal-toggle"><i class="ti-heart text-danger"></i>
+                    Sí</button>
+                <button onclick="window.question.close(); window.again.showModal();"  class="btn btn-theme-color"><i class="ti-heart-broken text-danger"></i>
+                    No</button>
+            </div>
+        </dialog>
+
+        <dialog id="again">
+            <div class="centered">
+                <img src="assets/imgs/again.png" alt="" style="width: 80%;">
+            </div>
+            <div class="centered">
+                <h1 style="color: black;">Probemos de nuevo...</h1>
+            </div>
+            <div class="centered">
+                <button onclick="window.again.close();" style="margin-right: 4rem;" class="btn btn-theme-color modal-toggle"><i class="ti-heart text-danger"></i>
+                    Sí</button>
+                <button onclick="window.again.close(); window.again2.showModal();"  class="btn btn-theme-color"><i class="ti-heart-broken text-danger"></i>
+                    No</button>
+            </div>
+        </dialog>
+
+        <dialog id="again2">
+            <div class="centered">
+                <img src="assets/imgs/again2.png" alt="" style="width: 80%;">
+            </div>
+            <div class="centered">
+                <h1 style="color: black;">A ver, piénsalo mejor...</h1>
+            </div>
+            <div class="centered">
+                <button onclick="window.again2.close();" style="margin-right: 4rem;" class="btn btn-theme-color modal-toggle"><i class="ti-heart text-danger"></i>
+                    Sí</button>
+                <button onclick="window.again2.close(); window.again3.showModal();"  class="btn btn-theme-color"><i class="ti-heart-broken text-danger"></i>
+                    No</button>
+            </div>
+        </dialog>
+
+        <dialog id="again3">
+            <div class="centered">
+                <img src="assets/imgs/again3.png" alt="" style="width: 80%;">
+            </div>
+            <div class="centered">
+                <h1 style="color: black;">Última oportunidad</h1>
+            </div>
+            <div class="centered">
+                <button onclick="window.again3.close();" style="margin-right: 4rem;" class="btn btn-theme-color modal-toggle"><i class="ti-heart text-danger"></i>
+                    Sí</button>
+                <button onclick="window.again3.close(); window.again4.showModal();"  class="btn btn-theme-color"><i class="ti-heart-broken text-danger"></i>
+                    No</button>
+            </div>
+        </dialog>
+
+        <dialog id="again4">
+            <div class="centered">
+                <img src="assets/imgs/again4.png" alt="" style="width: 80%;">
+            </div>
+            <div class="centered">
+                <h1 style="color: black;">Oye, hablemos esto</h1>
+            </div>
+            <div class="centered">
+                <button onclick="window.again4.close();" style="margin-right: 4rem;" class="btn btn-theme-color modal-toggle"><i class="ti-heart text-danger"></i>
+                    Sí</button>
+                <button onclick="window.again4.close(); window.again5.showModal();"  class="btn btn-theme-color"><i class="ti-heart-broken text-danger"></i>
+                    No</button>
+            </div>
+        </dialog>
+
+        <dialog id="again5">
+            <div class="centered">
+                <img src="assets/imgs/again5.jpg" alt="" style="width: 60%;">   
+            </div>
+            <div class="centered">
+                <h1 style="color: black;">No quería recurrir a esto</h1>
+            </div>
+            <div class="centered">
+                <button onclick="window.again5.close(); window.question.showModal();" class="btn btn-theme-color"><i class="ti-back-right text-danger"></i>
+                    A ver, una vez más</button>
+            </div>
+        </dialog>
+
+        <!-- page header -->
+        <header class="header" id="image">
+            <div class="overlay"></div>
+            <div class="header-content">
+                <h1 class="header-title">¡Sorpresa!</h1>
+                <!-- 100 words restriction -->
+                <p class="header-subtitle">
+                    Desde que te conocí despertaste un cariño natural y bello. Has sido bálsamo y oasis, especial y
+                    única en
+                    cada sentido de estas palabras. Has hecho mella en mí, ahondaste profundo y formaste un lugar ahí,
+                    tuyo.<br>
+                    Te quiero, mucho, y me inspiras a cada segundo.
+                </p>
+                <button onclick="window.question.showModal();" class="btn btn-theme-color"><i class="ti-hand-point-right text-danger"></i>
+                    Te tengo una pregunta...</button>
+            </div>
+        </header><!-- end of page header -->
+
+        <!-- modal -->
+        <div class="modalBox">
+            <div class="modalBox-body">
+                <iframe width="100%" height="450px" src="https://www.youtube.com/embed/NoWqnjmh8KU?si=3K-SyFDGR0UYz79z&amp;start=7" title="Canción Para ti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div><!-- end of modal -->
+
+        <!-- core  -->
+        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+        <!-- bootstrap affix -->
+        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+        <!-- Dorang js -->
+        <script src="assets/js/dorang.js"></script>
+
+    </div>
+
+</body>
+
+</html>
